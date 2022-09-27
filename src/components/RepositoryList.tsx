@@ -5,6 +5,7 @@ import {
   Heading,
   Input,
   List,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { RepoItem } from "./RepoItem";
@@ -51,13 +52,13 @@ export function RepositoryList() {
           </Button>
         </FormControl>
       </Box>
-      <List>
+      <SimpleGrid columns={[1, null, 2]} mb="10px" spacing={10}>
         {repos.length > 0 ? (
           repos.map((repo) => <RepoItem key={repo.name} repo={repo} />)
         ) : (
           <Box>{description}</Box>
         )}
-      </List>
+      </SimpleGrid>
     </Box>
   );
 }
