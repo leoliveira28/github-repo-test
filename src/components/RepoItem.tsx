@@ -15,7 +15,7 @@ export function RepoItem(props: RepoItem) {
         <ListIcon as={FaChevronRight} color="green.500" />
         {props.repo.name}
         <Text>{props.repo.description}</Text>
-        <Link as="a" href={props.repo.html_url} color='purple.500'>
+        <Link as="a" href={props.repo.html_url} color='pink.500'>
           Ver repositório
         </Link>
       </ListItem>
