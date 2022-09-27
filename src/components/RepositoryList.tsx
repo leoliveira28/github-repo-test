@@ -33,7 +33,7 @@ export function RepositoryList() {
     <Box alignItems="center" justifyContent="center" m="40px">
       <Heading mx="auto">Github RepoExplorer</Heading>
       <Box>
-        <FormControl m="40px" maxWidth="500px">
+        <FormControl m="40px" w="80%" maxWidth="1440px">
           <Input
             mb="20px"
             type="text"
